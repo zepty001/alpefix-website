@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
+
+.services-banner{
+    background-color: #1b1f29;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    width: 100%;
+
+    h1{
+        font-size: 60px;
+        font-family: 'Stylish', sans-serif;
+        margin: 2rem;
+        color: white;
+
+        @media screen and (max-width: 300px) {
+            font-size: 40px;
+        }
+    }
+}
+
+.banner-border{
+    border: 2px solid goldenrod;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.services-container{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto ;
+}
+
+.services-item{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0px auto;
+    align-items: center;
+    justify-content: space-between;
+
+
+    @media screen and (max-width: 1000px) {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
+.services-item1{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0px auto;
+    align-items: center;
+    justify-content: space-between;
+
+
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.services-image{
+    width: 50%;
+    margin: auto;
+    @media screen and (max-width: 1000px) {
+        width: 80%;
+    }
+
+    img{
+        width: 80%;
+        margin: 0px;
+    }
+}
+
+.services-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    @media screen and (max-width: 1000px) {
+        width: 100%;
+    }
+    
+    h2{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        font-family: 'Stylish', sans-serif;
+        color:#A569BD;
+        font-size: 40px;
+        margin-bottom: 0px;
+
+        @media screen and (max-width: 1000px) {
+            width: 100%;
+        }
+    }
+    p{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        text-align:left;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 18px;
+
+        @media screen and (max-width: 1000px) {
+            width: 100%;
+        }
+    }
+}

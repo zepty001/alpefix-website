@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
+
+.home{
+    width: 100%;
+    min-height: 80vh;
+}
+
+.home-banner-container{
+    overflow: hidden;
+}
+
+.banner-heading{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    font-family: 'Stylish', sans-serif;
+    font-size: 40px;
+    
+    @media screen and (max-width: 1000px) {
+        left: 10%;
+        font-size: 30px;
+    }
+
+    .typewriter{
+       color:#A569BD;
+       font-weight: 600;
+       margin-top: 0px;
+    }
+
+    p{
+        font-weight: 700;
+        margin-bottom: 0px;
+    }    
+}
+
+.home-banner{
+    // background-image: url('../../assets/home-banner.jpg');
+    background: url(../../assets/background.png) repeat-x;
+    background-size: contain;
+    height: 80vh;
+    width: 14676px;
+    animation: slide 200s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: translate(-7338px);
+    }
+}
+
+.walking-man{
+    height: 50%;
+    max-height: 225px;
+    position: absolute;
+    bottom: 8%;
+    left: 40%;
+
+    @media screen and (max-width: 640px) {
+        max-height: 175px;
+        left: 20%;
+    }
+}
+
+
+.products-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    width: 100%;
+    margin: auto;
+}
+
+.services-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2{
+        font-size: 60px;
+        font-family: 'Stylish', sans-serif;
+        margin: 1rem;
+    }
+
+    p{
+      font-size: 25px;
+        // font-family: 'Stylish', sans-serif;
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 500;
+        margin-bottom: 2rem;
+    }
+}
+
+.product-card{
+    cursor: pointer;
+     transform: scale(1, 1);
+     transition: transform 0.5s ease;
+    color: #324d67;
+    border-radius: 12px;
+    // box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+   background-color: #FBFCFC;
+   margin-bottom: 3rem;
+   margin-top: 1rem;
+   @media screen and (max-width: 300px) {
+    padding: 20px 0px;
+    width: 250px;
+  }
+   &:hover{
+    transform: scale(1.1,1.1)
+ }
+   }
+
+   .product-card{
+    -webkit-transform: scale(1);
+    transform: scale(1)
+}
+
+   .service-img{
+    display: flex;
+   }
+
+   .product-image{
+    background-color: #ebebeb;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+     transform: scale(1, 1);
+     transition: transform 0.8s ease;
+   }
+   
+   .product-name{
+     text-align: center;
+     margin-top: 1rem;
+     width: 350px;
+     font-size: 1.5rem;
+     color: #000000;
+     font-weight: 600;
+     @media screen and (max-width: 320px) {
+        text-align: center;
+        font-size: 1.2rem;
+        width: 250px;
+    }
+   }
+
+   .product-details{
+    text-align: center;
+    margin-top: 1rem;
+    width: 350px;
+    color: #000000 !important;
+    font-size: 1.2rem;
+    text-decoration: none;
+
+    @media screen and (max-width: 320px) {
+       text-align: center;
+       font-size: 0.8rem;
+       width: 250px;
+   }
+   }
+
+   .blog_button{
+    text-decoration: none;
+   }
+
+
+
+   .app__testimonial {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .testimonial-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h3{
+        font-size: 60px;
+        font-family: 'Stylish', sans-serif;
+        margin: 2rem; 
+    }
+  }
+
+  .app__testimonial-item {
+    width: 60%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    transition: all 0.3s ease-in-out;
+  
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  
+    @media screen and (min-width: 2000px) {
+      min-height: 450px;
+  
+      img {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  
+    @media screen and (max-width: 850px) {
+    }
+  
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+    }
+  }
+  
+  .app__testimonial-content {
+    flex: 1;
+    height: 100%;
+    padding: 0 2rem;
+    text-align: left;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  
+    p {
+      font-size: 1.25rem;
+      line-height: 2rem;
+      margin: 0px;
+      color: #030303;
+  
+      @media screen and (min-width: 2000px) {
+        font-size: 2rem;
+        line-height: 3.5rem;
+      }
+      @media screen and (max-width: 600px) {
+       text-align: center;
+      }
+    }
+
+    .name{
+      display: flex;
+      flex-direction: column;
+
+      @media screen and (max-width: 600px) {
+        justify-content: center;
+        margin: auto;
+       }
+      h4 {
+        font-weight: 600;
+        margin-bottom: 0rem;
+        font-size: 1.25rem;
+        color: #313bac;
+        @media screen and (max-width: 600px) {
+          text-align: center;
+          width: 50%;
+         }
+      }
+    
+      h5 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-top: 0px;
+        color: #6b7688;
+        @media screen and (max-width: 600px) {
+          text-align: center;
+         }
+      }
+    }
+  
+    @media screen and (max-width: 600px) {
+      margin-top: 2rem;
+      padding: 0;
+    }
+  }
+  
+  .app__testimonial-btns {
+    flex-direction: row;
+    margin-top: 1rem;
+  
+    div {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: white;
+  
+      margin: 1rem;
+      transition: all 0.3s ease-in-out;
+  
+      svg {
+        width: 20px;
+        height: 20px;
+        color: black;
+      }
+  
+      &:hover {
+        cursor: pointer;
+        background-color: #000000;
+        svg {
+          color: white;
+        }
+      }
+  
+      @media screen and (min-width: 2000px) {
+        width: 100px;
+        height: 100px;
+  
+        svg {
+          width: 45px;
+          height: 45px;
+        }
+      }
+    }
+  }
+  
+  .app__testimonial-brands {
+    width: 80%;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  
+    div {
+      width: 150px;
+      margin: 1.5rem;
+  
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        filter: grayscale(1);
+      }
+  
+      &:hover {
+        img {
+          filter: grayscale(0);
+        }
+      }
+  
+      @media screen and (min-width: 2000px) {
+        width: 210px;
+        margin: 2rem;
+      }
+  
+      @media screen and (max-width: 450px) {
+        width: 120px;
+        margin: 1rem;
+      }
+    }
+  
+    @media screen and (max-width: 800px) {
+      width: 100%;
+    }
+  }
+
+  .app__flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .app__wrapper {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+    padding: 4rem 2rem;
+  
+    @media screen and (max-width: 450px) {
+      padding: 4rem 1rem 2rem;
+    }
+  }
+
+  .p-text {
+    font-size: 0.8rem;
+    text-align: left;
+    color: var(--gray-color);
+    line-height: 1.5;
+  
+    @media screen and (min-width: 2000px) {
+      font-size: 1.75rem;
+    }
+  }
+  
+  .bold-text {
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--black-color);
+    text-align: left;
+  
+    @media screen and (min-width: 2000px) {
+      font-size: 2rem;
+    }
+  
+    @media screen and (max-width: 450px) {
+      font-size: 0.9rem;
+    }
+  }
+
+
+  .why-us-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h3{
+        font-size: 60px;
+        font-family: 'Stylish', sans-serif;
+        margin: 1rem;
+    }
+
+    p{
+      font-size: 25px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 500;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .choose-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    @media screen and (max-width: 850px) {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  .choose-item{
+    margin: 1rem auto;
+    margin-bottom: 2rem !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img{
+      width: 100px;
+    }
+    p{
+      text-align: left;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+  }

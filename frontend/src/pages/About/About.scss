@@ -1,0 +1,41 @@
+.about-content {
+    margin: 2rem auto;
+    width: 80%;
+    text-align: left;
+
+    p {
+        font-size: 1.25rem;
+    }
+}
+
+.about-content-container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
+    min-height: 80vh;
+}
+
+.q-btn {
+    button {
+        padding: 15px 50px;
+        font-family: 'Stylish', sans-serif;
+        font-size: 30px;
+        color: white;
+        background-color: #A569BD;
+        border: 2px solid white;
+        cursor: pointer;
+        border-radius: 30px;
+
+        &:hover {
+            background-color: white;
+            color: #A569BD;
+            border: 2px solid #A569BD;
+        }
+    }
+}
