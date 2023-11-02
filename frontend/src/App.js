@@ -7,7 +7,6 @@ import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import Services from "./pages/Services/Services";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
-import Checkout from "./pages/Checkout/Checkout";
 
 function App() {
   return (
@@ -20,7 +19,6 @@ function App() {
       <Route path="/services" element={<Services />} />
       <Route path="/about us" element={<About />} />
       <Route path="/contact us" element={<Contact />} />
-      <Route path="/checkout" element={<Checkout />} />
       <Route path="*" element={<Error />} />
     </Routes>
     <Footer />
